@@ -18,9 +18,10 @@ public class MakeChange
         purchaseAmount = keyboard.nextInt();
         
         // Handle invalid input (hint, use a while loop)
-        while(purchaseAmount < 1)
+        while(purchaseAmount < 1 || purchaseAmount > 100 )
         {
         	System.out.println("You can't do that you friggin idiot");
+        		System.out.print("this is where you re-enter a value: ");
         		purchaseAmount = keyboard.nextInt();
         }
         
